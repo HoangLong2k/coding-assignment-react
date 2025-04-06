@@ -1,2 +1,92 @@
-.tickets {
+.tickets-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.ticket-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #444;
+  gap: 12px;
+}
+
+.ticket-item:hover {
+  background: #f0f0f0;
+}
+
+.ticket-info {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.ticket-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.complete-icon {
+  font-size: 18px;
+  color: green;
+  cursor: pointer;
+}
+
+.inCompleted-icon {
+  font-size: 18px;
+  color: #dcdcdc;
+  cursor: pointer;
+}
+
+.complete-icon:hover {
+  color: darkgreen;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content input {
+  height: 24px;
+}
+
+/* .select-actions {
+  visibility: hidden;
+} */

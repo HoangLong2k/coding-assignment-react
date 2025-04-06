@@ -1,0 +1,45 @@
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  gap: 8px;
+}
+
+.loading-progess-bar {
+  height: 4px;
+  width: 328px;
+  background: #ffffff;
+}
+
+.loading-completed {
+  height: 4px;
+  max-width: 328px;
+  background: #3f51b5;
+  background: linear-gradient(200deg, #ffffff, #000000, #9d9d9d);
+  animation: loading-animation 1.3s infinite;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+@keyframes loading-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
